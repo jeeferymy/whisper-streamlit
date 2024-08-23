@@ -1,5 +1,5 @@
 import os
-import streamlit
+import streamlit as st
 from groq import Groq
 
 # Initialize the Groq client
