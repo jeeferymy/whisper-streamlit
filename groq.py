@@ -1,8 +1,9 @@
 import os
+import streamlit
 from groq import Groq
 
 # Initialize the Groq client
-client = Groq()
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # Specify the path to the audio file
 filename = os.path.dirname(__file__) + "/sample_audio.m4a" # Replace with your audio file!
